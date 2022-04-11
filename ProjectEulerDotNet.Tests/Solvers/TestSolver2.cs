@@ -4,17 +4,13 @@ using Xunit;
 
 namespace ProjectEulerDotNet.Tests;
 
-public class TestSolver2
+public class TestSolver2 : TestSolver
 {
-    [Fact]
-    public void Solver_ShouldReturnCorrectAnswer()
-    {
-        var solver = new Solver2();
+    public override string CorrectAnswer { get; set; } = "4613732";
 
-        var result = solver.Solve();
-
-        Assert.Equal("4613732", result);
-    }
+    public TestSolver2() 
+        : base(new Solver2()) 
+    { }
 
     [Fact]
     public void FibonacciSequenceUpTo_ShouldReturn11_WhenGiven5()

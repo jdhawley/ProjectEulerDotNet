@@ -9,7 +9,6 @@ public class Solver2 : ISolver
 
         while (currentFib <= top)
         {
-            Console.WriteLine($"Returning {currentFib}");
             yield return currentFib;
             secondPreviousFib = previousFib;
             previousFib = currentFib;
