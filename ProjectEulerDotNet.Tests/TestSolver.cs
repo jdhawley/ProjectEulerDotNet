@@ -2,9 +2,9 @@ using ProjectEulerDotNet.Solvers;
 using Xunit;
 
 namespace ProjectEulerDotNet.Tests;
-public class TestSolver
+public abstract class TestSolver
 {
-    public virtual string CorrectAnswer { get; set; } = "";
+    public abstract string CorrectAnswer { get; set; }
     public ISolver Solver { get; set; }
 
     public TestSolver(ISolver? solver = null)
