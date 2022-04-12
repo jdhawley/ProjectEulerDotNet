@@ -16,7 +16,6 @@ public class Solver3 : ISolver
                 primeFactors.Add(testNumber);
         }
 
-        Console.WriteLine(string.Join(',', primeFactors));
         return primeFactors;
     }
 
